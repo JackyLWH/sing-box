@@ -1,0 +1,21 @@
+sing-box 1.14.3 完全本機 DoH3 / userspace WireGuard MTU 重現結果
+
+測試無需 Surfshark 帳戶、外部 DNS 或外部網路。
+WireGuard 1408；本機 H3 回覆 example.com A 192.0.2.123。
+stock 預期 QUIC UDP payload 1280 / IPv4 1308；fixed 預期 1200 / 1228。
+
+mtu1500-stock-01: DNS成功=True，符合預期=True，初始尺寸符合=True
+mtu1500-stock-02: DNS成功=True，符合預期=True，初始尺寸符合=True
+mtu1500-stock-03: DNS成功=True，符合預期=True，初始尺寸符合=True
+mtu1290-stock-01: DNS成功=False，符合預期=True，初始尺寸符合=True
+mtu1290-stock-02: DNS成功=False，符合預期=True，初始尺寸符合=True
+mtu1290-stock-03: DNS成功=False，符合預期=True，初始尺寸符合=True
+mtu1290-fixed-01: DNS成功=True，符合預期=True，初始尺寸符合=True
+mtu1290-fixed-02: DNS成功=True，符合預期=True，初始尺寸符合=True
+mtu1290-fixed-03: DNS成功=True，符合預期=True，初始尺寸符合=True
+mtu1500-stock-04: DNS成功=True，符合預期=True，初始尺寸符合=True
+
+整體驗證通過：True
+詳細版本、SHA-256、封包尺寸及 ICMP 引用來源請看 summary.json 與各樣本 JSON。
+pcap 為實驗內層明文流量；全部位址、DNS 問題及回覆均為合成測試資料。
+結果不包含 WireGuard 私鑰或生成的 sing-box 設定。

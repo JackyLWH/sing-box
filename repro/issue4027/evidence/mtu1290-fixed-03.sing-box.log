@@ -1,0 +1,73 @@
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: uapi: updating private key
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 3 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 1 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 5 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 1 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 3 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 6 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 3 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 1 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 2 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 2 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 5 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 4 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 4 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 6 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 2 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: tun reader - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 6 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 5 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 4 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: event worker - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: interface up requested
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - uapi: created
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - uapi: updating endpoint
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - uapi: Adding allowedip
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - starting
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: udp bind has been updated
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: interface state was Down, requested Up, now Up
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - routine: sequential sender - started
++0000 2026-10-23 11:03:12 [36mINFO[0m inbound/direct[dns-in]: udp server started at 127.0.0.1:15353
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - routine: sequential receiver - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: receive incoming v4 - started
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: receive incoming v6 - started
++0000 2026-10-23 11:03:12 [36mINFO[0m network: updated default interface repro-h3, index 4
++0000 2026-10-23 11:03:12 [36mINFO[0m network: updated network environment: gateway 192.0.2.1, gateway_mac 5e:76:b8:35:5c:d8
++0000 2026-10-23 11:03:12 [36mINFO[0m sing-box started (0.00s)
++0000 2026-10-23 11:03:12 [36mINFO[0m [[38;5;130m3130164594[0m 0ms] inbound/direct[dns-in]: inbound packet connection from 127.0.0.1:50354
++0000 2026-10-23 11:03:12 [36mINFO[0m [[38;5;130m3130164594[0m 0ms] inbound/direct[dns-in]: inbound packet connection to 127.0.0.1:15353
++0000 2026-10-23 11:03:12 [37mDEBUG[0m [[38;5;130m3130164594[0m 0ms] router: match[0] inbound=dns-in => hijack-dns
++0000 2026-10-23 11:03:12 [37mDEBUG[0m [[38;5;130m3130164594[0m 0ms] dns: exchange example.com. IN A
++0000 2026-10-23 11:03:12 [36mINFO[0m [[38;5;130m3130164594[0m 0ms] endpoint/wireguard[wg]: outbound packet connection to 192.0.2.1:443
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - sending handshake initiation
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - received handshake response
++0000 2026-10-23 11:03:12 [37mDEBUG[0m [[38;5;130m3130164594[0m 5ms] dns: exchanged example.com NOERROR 60
++0000 2026-10-23 11:03:12 [36mINFO[0m [[38;5;130m3130164594[0m 5ms] dns: exchanged A example.com. 60 IN A 192.0.2.123
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: receive incoming v4 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: receive incoming v6 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - stopping
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - routine: sequential sender - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: peer(SDl2…1el4) - routine: sequential receiver - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: interface state was Up, requested Down, now Down
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: device closing
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: tun reader - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: event worker - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 1 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: device closed
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 4 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 1 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 6 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 5 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 2 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 6 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 4 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 5 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: decryption worker 3 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 3 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: handshake worker 2 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 6 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 5 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 3 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 1 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 2 - stopped
++0000 2026-10-23 11:03:12 [37mDEBUG[0m endpoint/wireguard[wg]: routine: encryption worker 4 - stopped

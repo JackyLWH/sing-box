@@ -1,0 +1,73 @@
+{
+  "case": "mtu1500-stock-01",
+  "binary": "stock",
+  "path_mtu": 1500,
+  "wireguard_mtu": 1408,
+  "expected_success": true,
+  "cold_start": true,
+  "query_success": true,
+  "rcode": 0,
+  "answers": [
+    {
+      "name": "example.com",
+      "type": "A",
+      "address": "192.0.2.123",
+      "ttl": 60
+    }
+  ],
+  "rcode_name": "NOERROR",
+  "response_bytes": 56,
+  "response_source": [
+    "127.0.0.1",
+    15353
+  ],
+  "query_seconds": 0.015845,
+  "log_has_timeout": false,
+  "process_exit_code": 0,
+  "capture_exit_code": 0,
+  "packet_evidence": {
+    "link_type": 101,
+    "ipv4_packet_count": 15,
+    "outbound_udp443_count": 8,
+    "inbound_udp443_count": 7,
+    "icmp_packet_too_big_count": 0,
+    "first_outbound_udp443": {
+      "source": "10.77.0.2",
+      "destination": "192.0.2.1",
+      "ip_bytes": 1308,
+      "ip_header_bytes": 20,
+      "ip_id": 0,
+      "df": true,
+      "more_fragments": false,
+      "fragment_offset": 0,
+      "protocol": 17,
+      "source_port": 39411,
+      "destination_port": 443,
+      "udp_bytes": 1288,
+      "udp_payload_bytes": 1280,
+      "timestamp_seconds": 1792753364,
+      "timestamp_fraction": 698110
+    },
+    "outbound_udp_payload_sizes": [
+      27,
+      28,
+      29,
+      33,
+      109,
+      1280
+    ],
+    "outbound_ip_sizes": [
+      55,
+      56,
+      57,
+      61,
+      137,
+      1308
+    ],
+    "icmp_packet_too_big": [],
+    "errors": []
+  },
+  "expected_match": true,
+  "initial_size_matches_expected": true,
+  "sample_seconds": 0.553757
+}

@@ -1,0 +1,107 @@
+{
+  "case": "mtu1290-fixed-02",
+  "binary": "fixed",
+  "path_mtu": 1290,
+  "wireguard_mtu": 1408,
+  "expected_success": true,
+  "cold_start": true,
+  "query_success": true,
+  "rcode": 0,
+  "answers": [
+    {
+      "name": "example.com",
+      "type": "A",
+      "address": "192.0.2.123",
+      "ttl": 60
+    }
+  ],
+  "rcode_name": "NOERROR",
+  "response_bytes": 56,
+  "response_source": [
+    "127.0.0.1",
+    15353
+  ],
+  "query_seconds": 0.005441,
+  "log_has_timeout": false,
+  "process_exit_code": 0,
+  "capture_exit_code": 0,
+  "packet_evidence": {
+    "link_type": 101,
+    "ipv4_packet_count": 16,
+    "outbound_udp443_count": 9,
+    "inbound_udp443_count": 6,
+    "icmp_packet_too_big_count": 1,
+    "first_outbound_udp443": {
+      "source": "10.77.0.2",
+      "destination": "192.0.2.1",
+      "ip_bytes": 1228,
+      "ip_header_bytes": 20,
+      "ip_id": 0,
+      "df": true,
+      "more_fragments": false,
+      "fragment_offset": 0,
+      "protocol": 17,
+      "source_port": 20558,
+      "destination_port": 443,
+      "udp_bytes": 1208,
+      "udp_payload_bytes": 1200,
+      "timestamp_seconds": 1792753392,
+      "timestamp_fraction": 302067
+    },
+    "outbound_udp_payload_sizes": [
+      28,
+      29,
+      33,
+      57,
+      78,
+      1200,
+      1326
+    ],
+    "outbound_ip_sizes": [
+      56,
+      57,
+      61,
+      85,
+      106,
+      1228,
+      1354
+    ],
+    "icmp_packet_too_big": [
+      {
+        "source": "10.77.0.1",
+        "destination": "10.77.0.2",
+        "ip_bytes": 576,
+        "ip_header_bytes": 20,
+        "ip_id": 41254,
+        "df": false,
+        "more_fragments": false,
+        "fragment_offset": 0,
+        "protocol": 1,
+        "icmp_type": 3,
+        "icmp_code": 4,
+        "next_hop_mtu": 1290,
+        "quoted_packet": {
+          "source": "10.77.0.2",
+          "destination": "192.0.2.1",
+          "ip_bytes": 1354,
+          "ip_header_bytes": 20,
+          "ip_id": 0,
+          "df": true,
+          "more_fragments": false,
+          "fragment_offset": 0,
+          "protocol": 17,
+          "source_port": 20558,
+          "destination_port": 443,
+          "udp_bytes": 1334,
+          "udp_payload_bytes": 1326
+        },
+        "timestamp_seconds": 1792753392,
+        "timestamp_fraction": 331228
+      }
+    ],
+    "errors": []
+  },
+  "expected_match": true,
+  "initial_size_matches_expected": true,
+  "sample_seconds": 0.503989
+}

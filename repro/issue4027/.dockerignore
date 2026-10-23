@@ -1,0 +1,8 @@
+*
+!Dockerfile
+!sing-box-source.tar.gz
+!initial1200.patch
+!server/
+!server/**
+!runtime/
+!runtime/**

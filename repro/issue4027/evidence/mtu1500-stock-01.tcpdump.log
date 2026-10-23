@@ -1,0 +1,4 @@
+tcpdump: listening on repro-wg, link-type RAW (Raw IP), snapshot length 262144 bytes
+15 packets captured
+15 packets received by filter
+0 packets dropped by kernel

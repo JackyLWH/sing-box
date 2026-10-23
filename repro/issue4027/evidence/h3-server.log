@@ -1,0 +1,8 @@
+2026/10/23 11:02:44 HTTP/3 DNS addr=192.0.2.1:443 initial_udp_payload=1200 disable_pmtud=true answer=example.com./A/192.0.2.123/TTL60
+2026/10/23 11:02:44 query proto=HTTP/3.0 name=example.com. type=1 rcode=0 answers=1
+2026/10/23 11:02:45 query proto=HTTP/3.0 name=example.com. type=1 rcode=0 answers=1
+2026/10/23 11:02:45 query proto=HTTP/3.0 name=example.com. type=1 rcode=0 answers=1
+2026/10/23 11:03:11 query proto=HTTP/3.0 name=example.com. type=1 rcode=0 answers=1
+2026/10/23 11:03:12 query proto=HTTP/3.0 name=example.com. type=1 rcode=0 answers=1
+2026/10/23 11:03:12 query proto=HTTP/3.0 name=example.com. type=1 rcode=0 answers=1
+2026/10/23 11:03:13 query proto=HTTP/3.0 name=example.com. type=1 rcode=0 answers=1
