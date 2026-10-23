@@ -1,13 +1,14 @@
-固定來源：SagerNet/sing-box commit 7054cac5124465ffdb145870d7c01885566711b1（1.14.3）。
+Source: SagerNet/sing-box commit 7054cac5124465ffdb145870d7c01885566711b1 (1.14.3).
 fe508b364e45f4aed8a696e83a21905f96845e14379aa6ba9acdd7e9f12b2a9c  sing-box-source.tar.gz
 fcb0e2a88735586730d5a20a4f1c953834e6d837fc6166a93f6d935e75742621  initial1200.patch
 520b1eb43d868ca55430be06ff3826791f4cce922d5c37731ede3924605e93ef  Dockerfile
 2f0ad9786663defb1eeb668ddc44a4a5cfa3e24fae6f966cfc215d6c831c4b7a  runtime/setup.sh
-5592899b3a1c27722d41222ccc10248c0767250d78fcedcfe10f0e7731bd528b  runtime/run.py
+24011572bb3c186ba2edbc36f351d78f6f05cf3dc94a5474aa8397ac5bba9c74  runtime/run.py
 6a5169a34a02898648f125a399af2155f6661d3e25d26d0fa15ccc74b3105181  server/main.go
 6f6d131661261d266bcab96a8df2b61fcbff6bee30c848558a0606e10e765d4f  server/go.mod
 c8ad8fdb46f8b58a061728d7b9ef1cfde8f22eabc98532484dad210f03f689f5  server/go.sum
 
-來源封存由該commit以 git archive --format=tar.gz --prefix=sing-box/ 匯出。
-依賴庫版本固定；本機server/go.sum為實測建置產生的鎖定清單。
-evidence/ 是成功完成的10個樣本，早期前置失敗及抓包緩衝不足的試跑不包含在交付證據。
+The source archive was exported from that commit using git archive --format=tar.gz --prefix=sing-box/.
+Server go.sum locks the dependencies resolved by the measured build.
+evidence/ contains the verified ten-sample run; setup failures and incomplete early captures are excluded.
+English presentation strings were updated after the measured run; experiment logic is unchanged.

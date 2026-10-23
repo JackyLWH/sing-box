@@ -429,16 +429,16 @@ def main() -> int:
         summary["completed_utc"] = dt.datetime.now(dt.timezone.utc).isoformat()
         json_write(RESULTS / "summary.json", summary)
         lines = [
-            "sing-box 1.14.3 完全本機 DoH3 / userspace WireGuard MTU 重現結果",
+            "sing-box 1.14.3 offline DoH3 / userspace WireGuard MTU results",
             "",
-            "測試無需 Surfshark 帳戶、外部 DNS 或外部網路。",
-            "WireGuard 1408；本機 H3 回覆 example.com A 192.0.2.123。",
-            "stock 預期 QUIC UDP payload 1280 / IPv4 1308；fixed 預期 1200 / 1228。",
+            "No Surfshark account, external DNS or runtime Internet connection is required.",
+            "WireGuard MTU 1408; local H3 answer: example.com A 192.0.2.123.",
+            "Expected initial UDP/IPv4 sizes: stock 1280/1308; fixed 1200/1228.",
             "",
         ]
         for sample in summary["samples"]:
-            lines.append(f"{sample['case']}: DNS成功={sample['query_success']}，符合預期={sample['expected_match']}，初始尺寸符合={sample['initial_size_matches_expected']}")
-        lines.extend(["", f"整體驗證通過：{summary.get('passed', False)}", "詳細版本、SHA-256、封包尺寸及 ICMP 引用來源請看 summary.json 與各樣本 JSON。", "pcap 為實驗內層明文流量；全部位址、DNS 問題及回覆均為合成測試資料。", "結果不包含 WireGuard 私鑰或生成的 sing-box 設定。"])
+            lines.append(f"{sample['case']}: dns_success={sample['query_success']}, expected_match={sample['expected_match']}, initial_size_matches={sample['initial_size_matches_expected']}")
+        lines.extend(["", f"All expected checks passed: {summary.get('passed', False)}", "See summary.json and per-sample JSON for versions, SHA-256, packet sizes and ICMP quotes.", "Pcaps contain inner plaintext lab traffic; all addresses, DNS questions and answers are synthetic.", "Results exclude generated WireGuard private keys and sing-box configurations."])
         (RESULTS / "RESULTS.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return 0 if summary.get("passed") else 1
 
