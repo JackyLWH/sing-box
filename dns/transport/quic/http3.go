@@ -116,6 +116,8 @@ func NewHTTP3(ctx context.Context, logger log.ContextLogger, tag string, options
 func (t *HTTP3Transport) newTransport() *http3.Transport {
 	return &http3.Transport{
 		Dial: func(ctx context.Context, addr string, tlsCfg *tls.STDConfig, cfg *quic.Config) (*quic.Conn, error) {
+			cfg = cfg.Clone()
+			cfg.InitialPacketSize = 1200
 			conn, dialErr := t.dialer.DialContext(ctx, N.NetworkUDP, t.serverAddr)
 			if dialErr != nil {
 				return nil, dialErr
